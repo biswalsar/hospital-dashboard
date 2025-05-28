@@ -1,0 +1,430 @@
+.navbar{
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 16px 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-logo{
+  color: rgb(53, 231, 241);
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.navbar-logo-sm{
+  color: rgb(11, 11, 66);
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background: #f1f3f5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  flex: 1;
+  max-width: 400px;
+  margin: 0 40px;
+}
+
+.navbar-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.search-icon {
+  color: #888;
+  font-size: 1rem;
+}
+
+.navbar-notification {
+  position: relative;
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+  margin-right: 450px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  padding: 24px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar-logo {
+  font-size: 15px;
+  font-weight: 100;
+  color: gray;
+  margin-bottom: 32px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-item {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sidebar-item:hover {
+  color: #1e90ff;
+}
+
+.sidebar-item.active {
+  font-weight: 600;
+  color: rgb(11, 11, 66); 
+}
+
+.sidebar-section {
+  margin-top: 80px;
+  font-size: 14px;
+  color: #999;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.dashboard-container {
+  flex: 1;
+  padding: 24px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  color: rgb(11, 11, 66);
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.dashboard-top {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* Human Card */
+.human-card {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: fit-content;
+}
+
+.human-image {
+  width:350px;
+  height: 500px;
+}
+.container {
+  position: relative;
+  width: 400px;
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.search {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #555;
+  cursor: pointer;
+}
+
+.label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.heart-label {
+  top: 25%;
+  right: -40px;
+  background-color: #4f46e5;
+}
+
+.leg-label {
+  bottom: 30%;
+  left: 15px;
+  background-color: #06b6d4;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+
+.card{
+  height: 100px;
+  padding: 10px;
+  width: 180px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-body{
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
+
+.progress-container {
+  width: 150px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 8px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+
+.activity-card {
+  margin-top: 32px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.activity-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.activity-placeholder {
+  color: #9ca3af;
+}
+
+.calendar-main {
+  background-color: white;
+  padding: 24px;
+  border-radius: 16px;
+  width: 550px;
+  max-width: 800px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e1b4b;
+  margin-bottom: 16px;
+}
+
+.calendar-nav span {
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.calendar-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.day-label, .date-cell {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(11, 11, 66);
+}
+
+.selected-date {
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 12px;
+  padding: 6px 0;
+  font-weight: bold;
+}
+
+.time-cells {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.time-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-slot {
+  font-size: 13px;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 4px 6px;
+  margin: 2px 0;
+  width: fit-content;
+}
+
+.selected-time {
+  background-color: #4f46e5;
+  color: white;
+  font-weight: bold;
+}
+
+.gray-highlight {
+  background-color: gray; 
+  color: white; 
+  font-weight: 500;
+}
+
+
+.calendar-appointments {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.appointment-card {
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dentist {
+  background-color: rgb(11, 11, 66);
+  color: white;
+}
+
+.physio {
+  background-color: #ede9fe;
+  color: #6b21a8;
+}
+
+.upcoming-schedule {
+  margin-top: 1.5rem; 
+}
+
+.upcoming-schedule h2 {
+  font-weight: bold;
+  font-size: 1.125rem; 
+  margin-bottom: 1rem; 
+}
+
+.day{
+  color: gray;
+}
+
+.event-row{
+  border-radius: 12px;
+  width: 200px;
+  height: 70px;
+  font-size: 14px;
+  line-height: 1.5;
+   background-color: #a19abd;
+}
+
+.schedule-flex{
+  display: flex;
+  gap: 20px;
+}
+
+.title{
+  margin-top: 15px;
+  margin-left: 10px;
+  color: rgb(52, 52, 147);
+}
+
+.time{
+  margin-left: 10px;
+  color: rgb(52, 52, 147);
+}
+
+.activity-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 270px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.appointment-paragraph{
+  color: rgb(198, 194, 194);
+}
+
+.chart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end; 
+  width: 100%;
+  padding: 10px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px; 
+}
+
+.bar {
+  width: 8px;
+  margin: 2px;
+  border-radius: 3px;
+  background-color: #00bfff;
+}
+
+.day-label {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap; 
+}
+
+.bar:nth-child(2) {
+  background-color: #1e90ff;
+}
+
+.bar:nth-child(3) {
+  background-color: #4169e1;
+}
+
